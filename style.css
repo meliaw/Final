@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/* landing page */
+.landingContainer {
+  height: 100vh;
+  background-image: url("ambient2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.landingContainer .overlay {
+  background-image: url("ring3.gif");
+  opacity: .1;
+  background-color: rgba(0,0,0,0);
+  background-blend-mode: multiply;
+}
+
+.landingHero {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding-left:35%;
+  padding-right: 35%;
+}
+
+.landingContainer .buttonContainer {
+  position: absolute;
+  top: 70%;
+  left:0;
+}
+/* landing page */
+
+/* end page */
+.endContainer {
+  height: 100vh;
+  background-image: url("ambient2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.endContainer .overlay {
+  background-image: url("ring3.gif");
+  opacity: .1;
+  background-color: rgba(0,0,0,0);
+  background-blend-mode: multiply;
+}
+
+#arrowContainer {
+  width: 100%;
+  position: absolute;
+  top:80%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#arrow {
+  width: 15%;
+}
+
+.endHero {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding-left:35%;
+  padding-right: 35%;
+}
+
+.endBG {
+  background-image: url("ambient3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#resourceContainer {
+  width: 100%;
+  height: auto;
+  /* background-image: url("ambient3.png") */
+  display: flex;
+  /* flex-direction: column;
+  align-items: center; */
+  justify-content: space-between;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+.item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.artContainer {
+  width: 75%;
+  /* margin-top: 10%; */
+  margin-bottom: 5%;
+}
+
+.art {
+  width: 100%;
+  transition: transform .8s;
+}
+
+.art:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 0px 20px 10px #8099cd;
+}
+
+.headContainer {
+  /* background-color: #fff; */
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.title {
+  color: #8099cd;
+  font-family: Asset;
+  font-size: 22px;
+  overflow-wrap: break-word;
+}
+
+
+/* end page */
+
+
+/* warning page */
+.warningContainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fourTileContainer {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.topCol, .botCol {
+  display: flex;
+  background-color: #000;
+  width: 100%;
+}
+
+#warnGif {
+  width: 50%;
+}
+
+.popUpContainer {
+  width: 50%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .8);
+  top: 25%;
+  left: 25%;
+  text-align: center;
+  display: none;
+}
+
+.topBar {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+
+#x {
+  width: 5%;
+}
+
+.popUpText {
+  padding: 5%;
+  color: #fff;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.mentalHealthContainer {
+  /* background-color: #fff; */
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  background-color: rgba(255,255,255,.9);
+  width: 40%;
+  display: flex;
+  justify-content: center;
+
+}
+
+#healthBar{
+  width: 80%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* warning page */
+
+
+/* esteem page */
+.esteemContainer {
+  max-height: 100vh;
+  background-image: url(mindGames.jpeg);
+  background-size: contain;
+}
+
+.esteemContainer .popUpContainer {
+  position: absolute;
+  top: 10%;
+  width: 40%;
+  left: 30%;
+}
+
+.title {
+  color: #fff;
+}
+
+#parallax {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(fail.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}
+
+#parallax2 {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height:100vh;
+  background-image: url(hate.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#parallax3 {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height:100vh;
+  background-image: url(worth.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+/* esteem page */
+
+
+/* motivation page */
+.motivationContainer {
+  position: relative;
+  height: 100vh;
+  background-image: url("spiral2.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  background-image: url("feel.gif");
+  background-size: cover;
+  background-position: center;
+  opacity: .7;
+  background-color: white;
+  filter: brightness(150%);
+  background-blend-mode: multiply;
+}
+
+.motivationHero {
+  background-color: rgba(255,255,255,.8);
+}
+
+.motivationContainer .title {
+  color: #fff;
+}
+
+.motivationContainer .popUpContainer {
+  width: 35%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .8);
+  top: 5%;
+  left: 5%;
+}
+/* motivation page */
+
+
+/* anxiety page */
+.anxietyContainer {
+  height: 100vh;
+  background-image: url("code.gif");
+  background-size: auto;
+}
+
+.anxietyContainer .overlay {
+  background-image: url("purpleEyes.png");
+  opacity: 1;
+  background-color: rgba(0,0,0,0);
+  background-size: 125%;
+}
+
+.anxietyContainer .popUpContainer {
+  width: 30%;
+  top: 10%;
+  left: 65%;
+}
+/* anxiety page */
+
+
+/* breakpoints */
+@media only screen and (max-width: 400px){
+  .topCol, .botCol {
+    flex-direction: column;
+  }
+
+  #warnGif {
+    width: 100%;
+  }
+
+  .topBar {
+    height: 15px;
+  }
+
+  .popUpContainer{
+    top: 20%;
+  }
+
+  .popUpText {
+    font-size: 15px;
+  }
+
+  .buttonContainer {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and  (min-width: 401px) and (max-width: 500px){
+  .topBar {
+    height: 15px;
+  }
+  .popUpContainer{
+    top: 5%;
+  }
+
+  .popUpText {
+    font-size: 10px;
+  }
+  .buttonContainer {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px){
+  .topBar {
+    height: 15px;
+  }
+  .popUpContainer{
+    top: 10%;
+  }
+
+  .popUpText {
+    font-size: 10px;
+  }
+  .buttonContainer {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px){
+  .topBar {
+    height: 15px;
+  }
+  .popUpContainer{
+    top: 20%;
+  }
+
+  .popUpText {
+    font-size: 10px;
+  }
+  .buttonContainer {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 950px){
+  .topBar {
+    height: 15px;
+  }
+  .popUpContainer{
+    top: 10%;
+  }
+
+  .popUpText {
+    font-size: 15px;
+  }
+  .buttonContainer {
+    margin-bottom: 15px;
+  }
+}
